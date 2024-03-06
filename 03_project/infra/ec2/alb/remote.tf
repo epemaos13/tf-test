@@ -14,3 +14,11 @@ data "terraform_remote_state" "security_group" {
     region = "ap-northeast-2"
   }
 }
+data "terraform_remote_state" "jenkins_instance" {
+  backend = "s3"
+  config = {
+    bucket = "aws18-terraform-state"
+    key    = "infra/ec2/jenkins/terraform.tfstate"
+    region = "ap-northeast-2"
+  }
+}
