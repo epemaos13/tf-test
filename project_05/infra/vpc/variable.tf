@@ -11,5 +11,5 @@ variable "private_subnet" {
 }
 variable "azs" {
   type    = list(any)
-  default = ["ap-northeast-2a", "ap-norhteast-2c"]
+  default = ["ap-northeast-2a", "ap-northeast-2c"]
 }
