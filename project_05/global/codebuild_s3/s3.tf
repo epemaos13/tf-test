@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "project05-bucket-codebuild" {
 }
 
 resource "aws_dynamodb_table" "project05-codebuild-locks" {
-  name = "project05-codebuild-looks"
+  name = "project05-codebuild-locks"
   billing_mode = "PAY_PER_REQUEST"
   hash_key = "LockID"
 

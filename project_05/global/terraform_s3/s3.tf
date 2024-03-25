@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "project05-bucket-terraform" {
 }
 
 resource "aws_dynamodb_table" "project05-terraform-locks" {
-  name = "project05-terraform-looks"
+  name = "project05-terraform-locks"
   billing_mode = "PAY_PER_REQUEST"
   hash_key = "LockID"
 
